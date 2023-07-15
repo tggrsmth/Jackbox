@@ -11,7 +11,7 @@ app.use(
   }),
 );
 
-app.get('/', (req, res)=> {
+app.use('/', function (req, res, next) {
     res.sendFile(__dirname + '/index.html')
 })
 

@@ -1,7 +1,7 @@
 Jackbox Rest API project
 
 Project Description:
-Using the language of your choice, create a backend service that allows for a user sign-up and a generic page to submit and return data.  The technology used for the front end is a simple HTML file that is served up to the user via a browser request to the host server root directory endpoint.  The host server is a node.js application that is configured in an index.js file to run on port 3000.
+Using the language of your choice, create a backend service that allows for a user sign-up and a generic page to submit and return data.  The technology used for the front end is a simple HTML file that is served up to the user via a browser request to the host server root directory endpoint.  The host server is a node.js application that is configured in an index.js file to run on port 3000.  Dependencies used in the project are express(to create an app object), fs(to create a .csv if needed and append data to it), and body-parser(set urlencoding for app object).
 
 
 Project Requirements:
