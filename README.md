@@ -34,5 +34,9 @@ How to use the project:
 
 
 How to Install and Run the Project:
-
+1.  Install Node.js if you want to run the project locally.  Skip this step if you already have a Node installation.
+2.  Go to https://github.com/tggrsmth/Jackbox and get the clone url.  Clone the repo locally onto a Node.js server.
+3.  Run npm install to install dependencies for the project from the Jackbox root directory for the project.
+4.  The port configuration for the server is configured in index.js as port 3000.  Edit the file if you want to change that port.
+5.  Start the project on its own Node server by running node index.js at the command line.
 
