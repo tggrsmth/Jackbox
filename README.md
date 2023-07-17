@@ -27,7 +27,7 @@ The website and the backend service should be able to be run with minimal config
 
 
 How to use the project:
-1.  Using a browser, open the Node.js host server on port 3000 at the root directory(/).  This will bring up a form to enter user data.  
+1.  Using a browser, open the Node.js host server on port 3000 at the home directory(/home).  This will bring up a form to enter user data.  
 2.  Once you fill out the fields on the form appropriately then click the Submit button.
 3.  Your user data will be appended to a user.csv file that is hosted in the root directory of the Node.js server.
 4.  Administrators can go to the /allusers endpoint on the host Node.js server with a browser or an api testing tool.  This will drop a allusers.csv to their Downloads directory so it can be opened by the administrator.

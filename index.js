@@ -12,7 +12,7 @@ app.use(
 );
 
 //This endpoint is used to generate a user entry form as a home page.
-app.get('/', function (req, res, next) {
+app.use('/home', function (req, res, next) {
     res.sendFile(__dirname + '/index.html')
 })
 
