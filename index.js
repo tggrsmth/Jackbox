@@ -11,15 +11,17 @@ app.use(
   }),
 );
 
-app.use('/', function (req, res, next) {
+//This endpoint is used to generate a user entry form as a home page.
+app.get('/', function (req, res, next) {
     res.sendFile(__dirname + '/index.html')
 })
 
-//This endpoint is for an admin to pull the .csv file containing all users
+//This endpoint is for an admin to pull the .csv file containing all users.
 app.get('/allusers', (req, res)=> {
     res.sendFile(__dirname + '/users.csv')
 })
 
+//This endpoint is by the submit code on the user entry form to store data to a .csv.
 app.post('/users', (req, res)=> {
   console.log(req.body)
   fs.appendFile('users.csv', req.body.firstname + "," + req.body.lastname + "," + req.body.email + "," + req.body.username + "," + req.body.password + '\r\n', (err) => {
